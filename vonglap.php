@@ -31,8 +31,51 @@ $n = 10;
 $s = 0;
 for($a = 1;$a<=$n;$a++){
 	$s += $a;
+	// echo "Tổng S = ".$s; NẾU ĐỂ ECHO TRONG NÀY SẼ CHẠY TỔNG S TỪ ... ĐẾN ...
 }
-	echo "Tổng S = ".$s;
+echo "Tổng S = ".$s;
+
+echo "<hr/>";
+
+// Đếm số chẵn lẻ
+$start = 1;
+$end = 43;
+
+$evenNubemr = null; //số chẵn
+$oddNubemr = null; //số lẻ
+
+$evenCount = 0; //đếm số chẵn
+$oddCount = 0; //đếm số lẻ
+
+
+for($i=$start;$i<=$end;$i++){
+	if($i%2==0){  // kiểm tra chẵn - lẻ
+		// echo "Số chẵn ".$i."<br/>";
+		$evenNubemr.=$i." ";
+		$evenCount++;
+	}else{
+		// echo "Số lẻ ".$i."<br/>";
+		$oddNubemr.=$i." ";
+		$oddCount++;
+	}
+		
+}
+if($evenCount>0){
+	echo "Tìm thấy ".$evenCount." số chẵn là: ".$evenNubemr."<br/>";
+}else{
+	echo "Không tìm thấy số chẵn nào cả! <br/>";
+}
+
+if ($oddCount>0) {
+	echo "Tìm thấy ".$oddCount." số lẻ là: ".$oddNubemr."<br/>";
+}else{
+	echo "Không tìm thấy số lẻ nào cả! <br/>";
+
+}
+
+
+
+echo "<hr/>";
 
 ?>
 
