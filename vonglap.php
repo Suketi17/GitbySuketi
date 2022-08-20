@@ -51,7 +51,7 @@ $oddCount = 0; //đếm số lẻ
 for($i=$start;$i<=$end;$i++){
 	if($i%2==0){  // kiểm tra chẵn - lẻ
 		// echo "Số chẵn ".$i."<br/>";
-		$evenNubemr.=$i." ";
+		$evenNubemr.=$i." "; //NỐI BIẾN 
 		$evenCount++;
 	}else{
 		// echo "Số lẻ ".$i."<br/>";
@@ -72,9 +72,63 @@ if ($oddCount>0) {
 	echo "Không tìm thấy số lẻ nào cả! <br/>";
 
 }
+echo "<hr/>";
 
 
+//-----------------------------------------------------------------//
+// //VONG LẶP WHITE
+// while (dieu_kien_dung) {	//cú pháp
+// 	//danh sách câu lệnh
+// }
 
+$i = 0; // Gán giá trị ban đầu
+while ($i<=5) {
+	echo "Vòng lặp thứ: ".$i."<br/>";
+	$i++; // Xử lý điều kiện thoát vòng lặp
+}
+echo "<hr/>";
+/*
+	$i = 0 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 0
+	$i = 1 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 1
+	$i = 2 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 2
+	$i = 3 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 3
+	$i = 4 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 4
+	$i = 5 -> Kiểm tra đúng -> Chạy vòng lặp -> $i = 5
+	$i = 6 -> Kiểm tra ko đúng -> thoát vòng lặp
+ */
+
+//--> Ví dụ: Tính tổng: S = 1+2+3+..+n
+$i = 1;
+$n = 30;
+$s = 0;
+while ($i<=$n) {
+	
+	$s+=$i; 
+	$i++; // đặt sau tính tổng
+	
+}
+echo "Tổng = ".$s. "<br/>";
+echo "<hr/>";
+
+//--> Ví dụ: Tính tổng S = 1/2 + 1/4 + 1/6 + ... + 1/n
+//Điều kiện : 1/n < 0.0001
+$n = 5;
+$s = 0;
+while (1/$n>=0.001) {
+	$s+=1/$n;
+	$n+=2;
+}
+echo "Tổng = ".$s;
+echo "<hr/>";
+
+//-----------------------------------------------------------------//
+// Vòng Lặp Do White (Chạy trước rồi mới quay lại kiểm tra điều kiện)
+$i = 1;
+do {
+	// $i++; //Tăng tới 11
+	echo "Vòng lặp thứ: " .$i."<br/>";
+	$i++; // Tăng tới 10
+} while ($i<=10);
 echo "<hr/>";
 
 ?>
