@@ -23,7 +23,7 @@
 
 	}
 	 ?>
-	 <form action="xylydulieu.php" method="post">
+	 <form action="xulydulieu.php" method="post">
 	 	<table>
 	 		<tr>
 	 			<td colspan="2"><h3>Sửa sinh viên</h3></td>
@@ -36,30 +36,30 @@
 
 	 		<tr>
 	 			<td>Họ và tên</td>
-	 			<td><input type="text" name="txt_tensv" value="<?<?php echo $tensv ?>" size = "30" ></td>
+	 			<td><input type="text" name="txt_tensv" value="<?php echo $tensv ?>" size = "30" ></td>
 	 		</tr>
 
 	 		<tr>
 	 			<td>Giới tính</td>
 	 			<td>
-	 				<input type="radio" name=" rd_gt" value="0" <?<?php echo $gioitinh == 0 ? 'checked' : '' ?>> Nam
-	 				<input type="radio" name="rd_gt" value="1" <?<?php $gioitinh == 1 ? 'checked' : '' ?>>
+	 				<input type="radio" name="rd_gt" value="0" <?php echo $gioitinh == 0 ? 'checked' : '' ?>> Nam
+	 				<input type="radio" name="rd_gt" value="1" <?php echo $gioitinh == 1 ? 'checked' : '' ?>>
 	 			</td>
 	 		</tr>
 
 	 		<tr>
 	 			<td>Quê quán</td>
-	 			<td><input type="text" name="txt_diachi" value="<?<?php echo $diachi ?>" size = "30"></td>
+	 			<td><input type="text" name="txt_diachi" value="<?php echo $diachi ?>" size = "30"></td>
 	 		</tr>
 
 	 		<tr>
 	 			<td>Ngày sinh</td>
-	 			<td><input type="year" name="txt_date" value="<?<?php echo $ngaysinh ?>"></td>
+	 			<td><input type="year" name="txt_date" value="<?php echo $ngaysinh ?>"></td>
 	 		</tr>
 
 	 		<tr>
 	 			<td>Ngành học</td>
-	 			<td><input type="text" name="txt_nganhhoc" value="<?<?php echo $nganhhoc ?>" size = "30"></td>
+	 			<td><input type="text" name="txt_nganhhoc" value="<?php echo $nganhhoc ?>" size = "30"></td>
 	 		</tr>
 
 	 		<tr>

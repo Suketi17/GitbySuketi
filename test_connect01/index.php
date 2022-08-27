@@ -43,8 +43,9 @@
 		 	<td><?php echo $nganhhoc ?></td>
 
 		 	<td>
-		 		<a href="xylysua.php?idsv=<?php echo $masv; ?>">Sửa</a>
-		 		<a href="xylysua.php?idsv=<?php echo $masv; ?>">Xóa</a>
+		 		<a href="xulysua.php?idsv=<?php echo $masv; ?>">Sửa</a>
+		 		<a href="xulyxoa.php?idsv=<?php echo $masv; ?>">Xóa</a>
+		 		<a href="suadulieu.php?idsv=<?php echo $masv; ?>">Sửa</a>
 		 	</td>
 		 </tr>
 		<?php 

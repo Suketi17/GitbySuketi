@@ -9,5 +9,5 @@
 		$result = "Xóa không thành công!" . mysqli_error($conn);
 	}
 	//ngắt kết nối
-	mysql_close($conn);
+	mysqli_close($conn);
  ?>
