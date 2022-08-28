@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="style.css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
 	<form method="post" action="register.php" class="form">
@@ -20,7 +21,7 @@
 
 		<input type="submit" name="dangky" value="Đăng Ký"/>
 		<?php require 'xuly.php';?>
-		
+	
 	</form>
 
 </body>
