@@ -45,10 +45,10 @@
 	echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="register.php";</script>';
 
 	if (mysqli_query($conn, $sql)){
-		// echo "Tên đăng nhập: ".$_POST['username']."<br/>";
-		// echo "Mật khẩu: " .$_POST['password']."<br/>";
-		// echo "Email đăng nhập: ".$_POST['email']."<br/>";
-		// echo "Số điện thoại: ".$_POST['phone']."<br/>";
+		echo "Tên đăng nhập: ".$_POST['username']."<br/>";
+		echo "Mật khẩu: " .$_POST['password']."<br/>";
+		echo "Email đăng nhập: ".$_POST['email']."<br/>";
+		echo "Số điện thoại: ".$_POST['phone']."<br/>";
 	}
 	else {
 		echo '<script language="javascript">alert("Có lỗi trong quá trình xử lý"); window.location="register.php";</script>';

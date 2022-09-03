@@ -8,11 +8,11 @@ $conn = mysqli_connect('localhost', 'root', '', 'hau_db04') or die ('Lỗi kết
 if (isset($_POST['dangky']))
 {
 
-$username = isset($_POST['username']) ? mysql_escape_string($_POST['username']) : '';
+$username = isset($_POST['username']) ? mysqli_escape_string($conn, $_POST['username']) : '';
 
 $password = isset($_POST['password']) ? md5($_POST['password']) : '';
 
-$email = isset($_POST['email']) ? mysql_escape_string($_POST['email']) : '';
+$email = isset($_POST['email']) ? mysqli_escape_string($conn, $_POST['email']) : '';
 
 
 // Kiểm tra username hoặc email trong CSDL có trùng không
@@ -33,7 +33,6 @@ die ();
 }
 else {
 $sql = "INSERT INTO hau_table04 (username, password, email) VALUES ('$username','$password', '$email')";
-
 if (mysqli_query($conn, $sql)){
 
 echo "Username: ".$_POST['username']."<br/>";

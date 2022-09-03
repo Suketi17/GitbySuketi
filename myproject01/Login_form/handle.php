@@ -39,7 +39,7 @@
 		$result = mysqli_query($conn, $sql);
 
 		//Nếu kết quả > 1 thì nghĩa là username or email đã tồn tại trong DB
-		if (mysqli_num_row($result) > 0) {
+		if (mysqli_num_rows($result) > 0) {
 			echo '<script language="javascript">alert("Bị trùng tên hoặc chưa nhập tên!"); window.location="register.php";</script>';
 
 			// Dừng chương trình
@@ -48,6 +48,7 @@
 
 			$sql = "INSERT INTO sale_table (username, password, email, address, phonenumber) VALUES ('$username','$password','$email','$address','phonenumber')";
 			echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="register.php";</script>';
+
 
 			if (mysqli_query($conn, $sql)) {
 				echo "Tên đăng nhập: " . $_POST['username']."<br/>";
