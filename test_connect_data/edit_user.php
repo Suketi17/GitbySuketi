@@ -21,14 +21,14 @@
 		<?php
 
 				if (isset($_POST['update_user'])){
-				$id=$_GET['id'];
-				$username=$_POST['username'];
-				$email=$_POST['email'];
-				$phone=$_POST['phone'];
+					$id=$_GET['id'];
+					$username=$_POST['username'];
+					$email=$_POST['email'];
+					$phone=$_POST['phone'];
 
-				 // Create connection -->
-				$conn = new mysqli("localhost", "root", "", "data");
-				 // Check connection -->
+				 	// Create connection -->
+					$conn = new mysqli("localhost", "root", "", "data");
+				 	// Check connection -->
 				if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
 				}
@@ -36,15 +36,18 @@
 				$sql = "UPDATE `member` SET username='$username', email='$email', phone='$phone' WHERE id='$id'";
 
 				if ($conn->query($sql) === TRUE) {
-				echo "Record updated successfully";
+					echo "Record updated successfully";
+
 				} else {
-				echo "Error updating record: " . $conn->error;
+					echo "Error updating record: " . $conn->error;
 				}
 
-				$conn->close();
+					$conn->close();
 				}
+
 
 		?>
 	</form>
 </body>
 </html>
+

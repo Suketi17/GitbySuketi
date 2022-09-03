@@ -1,4 +1,4 @@
-<table border="1">
+<table border="1" align="center">
 	<tr>
 		<td>ID</td>
 		<td>Username</td>
@@ -7,7 +7,7 @@
 	</tr>
 	<?php
 	require 'connect.php';
-	$query=mysqli_query($conn,"select * from `member`");
+	$query=mysqli_query($conn,"SELECT * FROM `member`");
 	while($row=mysqli_fetch_array($query)){
 	?>
 	<tr>
@@ -22,3 +22,4 @@
 	}
 	?>
 </table>
+

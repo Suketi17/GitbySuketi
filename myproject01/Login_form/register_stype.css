@@ -5,16 +5,16 @@ html{
 	background: linear-gradient(120deg,#2980b9,#8e44ad);
 }
 
-h2{
+h1{
 	color: #EAE509;
 	font-size: 200%;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 10px;
 
 }
-.box{
+.register_class{
 	width: 300px;
-	height: 350px;
+	height: 460px;
 	padding: 40px;
 	position: absolute;/*có tác dụng giúp định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài,hoặc ít nhất là theo cửa sổ trình duyệt*/
 	top: 50%;
@@ -23,15 +23,16 @@ h2{
 	text-align: center;
 	background: #002B5B;
 	border-radius: 10px;
+
 }
 
-.box h1{
+.register_class h1{
 	color: white;
 	/*text-transform: uppercase;*//*Tất cả chữ trong văn bản thành chữ hoa. 
 	text-transform: lowercase; Tất cả chữ trong văn bản thành chữ thường.*/
 	font-weight: 500px;
 }
-.box input[type = "text"],.box input[type = "password"]{
+.register_class input[type = "text"],.box input[type = "password"]{
 	border: 0;
 	background: none;
 	display: block;/*có tác dụng xác định thành phần hiển thị theo các hàng độc lập*/
@@ -46,13 +47,13 @@ h2{
 	transition: 0.25s;/*hiệu ứng ngay khi thay đổi các thuộc tính có trong CSS*/
 }
 
-.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+.register_class input[type = "text"]:focus,.box input[type = "password"]:focus{
 	 /*:focus dùng để chọn tất cả các phần tử INPUT, TEXTAREA, SELECT đang được người dùng truy cập vào*/
 	width: 250px;
 	border-color: #2ecc71;
 }
 
-.box input[type = "submit"]{
+.register_class input[type = "submit"]{
 	border: 0;
 	background: none;
 	display: block;/*có tác dụng xác định thành phần hiển thị theo các hàng độc lập*/
@@ -68,19 +69,19 @@ h2{
 	cursor: pointer;/*đổi trỏ chuột*/
 }
 
-.box input[type = "submit"]:hover{
+.register_class input[type = "submit"]:hover{
 	background: #2ecc71;
 }
 
-.box a{
+.register_class a{
 	color: white;
 }
-.box a:hover{
+.register_class a:hover{
 	cursor: pointer;
 	color: #2ecc71;
 }
 
-.box p{
+.register_class p{
 	color: red;
 	 display: inline; 
 	 margin-right: 10px;

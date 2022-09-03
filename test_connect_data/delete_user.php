@@ -5,10 +5,13 @@
 		$sql = "DELETE FROM member WHERE id='$id'";
 	if ($conn->query($sql) === TRUE) {
 		echo "Xoá thành công!";
+
 	} else {
 		echo "Error updating record: " . $conn->error;
 	}
 
 	$conn->close();
+	
 	}
+
 ?>
