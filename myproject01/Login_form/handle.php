@@ -49,6 +49,8 @@
 			$sql = "INSERT INTO sale_table (username, password, email, address, phonenumber) VALUES ('$username','$password','$email','$address','phonenumber')";
 			echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="register.php";</script>';
 
+			// header("location: /index.php");
+
 
 			if (mysqli_query($conn, $sql)) {
 				echo "Tên đăng nhập: " . $_POST['username']."<br/>";
