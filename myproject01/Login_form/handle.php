@@ -49,8 +49,6 @@
 			$sql = "INSERT INTO sale_table (username, password, email, address, phonenumber) VALUES ('$username','$password','$email','$address','phonenumber')";
 			echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="register.php";</script>';
 
-			// header("location: /index.php");
-
 
 			if (mysqli_query($conn, $sql)) {
 				echo "Tên đăng nhập: " . $_POST['username']."<br/>";
@@ -58,6 +56,8 @@
 				echo "Email đăng nhập: " . $_POST['email']."<br/>";
 				echo "Địa chỉ: " .$_POST['address']."<br/>";
 				echo "sdt: " .$_POST['phonenumber']."<br/>";
+
+				// header('location: index.php');
 
 			}else{
 				echo 'script language="javascript">alert("Có lỗi trong quá trình xử lý"); window.location="register.php";</script>';
